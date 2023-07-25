@@ -28,8 +28,8 @@ jobs:
       - name: Build
         run: ./build.sh
         
-      - name: star
+      - name: Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: star
-          path: ${{ github.workspace }}/star/
+          name: artifact
+          path: ${{ github.workspace }}/artifact/
