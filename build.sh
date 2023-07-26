@@ -128,6 +128,7 @@ FUNC_BUILD_ZIP()
     cp $RDIR/toolchains/update-binary $RDIR/build/zip/META-INF/com/google/android/
     cd $RDIR/build/zip
     zip -r ../kernel_$MODEL$piss.zip .
+    rm -rf $RDIR/build/zip
     cd $RDIR/build
 }
 
