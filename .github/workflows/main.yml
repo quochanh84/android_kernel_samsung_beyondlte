@@ -33,7 +33,7 @@ jobs:
           git apply ./KernelSU.patch
 
       - name: Build
-        run: ./build.sh d2x
+        run: ./build.sh d2xks
         
       - name: Artifact
         uses: actions/upload-artifact@v2
