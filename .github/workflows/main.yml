@@ -19,7 +19,7 @@ jobs:
           sudo apt-get update -y
           sudo apt-get upgrade -y
           sudo apt-get install build-essential gcc-aarch64-linux-gnu -y
-	  
+
       - name: Building with N variant tzdev
         run: |
           rm -r drivers/misc/tzdev
