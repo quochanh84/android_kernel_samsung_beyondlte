@@ -13,11 +13,6 @@ jobs:
     steps:
       - name: Check Out
         uses: actions/checkout@v3
-
-      - name: Building with N variant tzdev
-        run: |
-          rm -r drivers/misc/tzdev
-          cp -r BTStzdev drivers/misc/tzdev
   
       - name: Setup KernelSU
         run: |
