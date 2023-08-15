@@ -59,7 +59,6 @@ FUNC_BUILD_KERNEL()
 {
     echo " Starting a kernel build using "$KERNEL_DEFCONFIG ""
     # No this is not a typo, samsung left it this way on 12
-    export K_NAME="oneui5.1-Kernel"
     export PLATFORM_VERSION=11
     export ANDROID_MAJOR_VERSION=r
 
