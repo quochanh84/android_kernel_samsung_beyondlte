@@ -22,7 +22,7 @@ jobs:
           if [ -d "./drivers/kernelsu" ]; then
             rm -rf "./drivers/kernelsu"
           fi
-          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
           wget -q "https://raw.githubusercontent.com/Star-Seven/android_kernel_samsung_beyondlte/kernelsu/kernelsu.patch" -O KernelSU.patch
           git apply ./KernelSU.patch
 
