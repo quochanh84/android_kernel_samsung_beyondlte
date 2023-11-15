@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ "kernelsu" ]
+    branches: [ "kernelsu-fix" ]
   pull_request:
-    branches: [ "kernelsu" ]
+    branches: [ "kernelsu-fix" ]
 
 jobs:
   build:
@@ -23,11 +23,9 @@ jobs:
             rm -rf "./drivers/kernelsu"
           fi
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
-          wget -q "https://raw.githubusercontent.com/Star-Seven/android_kernel_samsung_beyondlte/kernelsu/kernelsu.patch" -O KernelSU.patch
-          git apply ./KernelSU.patch
 
       - name: Build
-        run: ./build.sh d1x N
+        run: ./build.sh d2x N
         
       - name: Artifact
         uses: actions/upload-artifact@v2
