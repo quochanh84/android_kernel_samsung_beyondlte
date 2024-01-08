@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ "oneui5_davinci" ]
+    branches: [ "test-APatch" ]
   pull_request:
-    branches: [ "oneui5_davinci" ]
+    branches: [ "test-APatch" ]
 
 jobs:
   build:
