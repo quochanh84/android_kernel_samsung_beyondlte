@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ "oneui5_davinci" ]
+    branches: [ "oneUI4.1" ]
   pull_request:
-    branches: [ "oneui5_davinci" ]
+    branches: [ "oneUI4.1" ]
 
 jobs:
   build:
