@@ -50,7 +50,7 @@ d2x)
 
 *)
     echo "Unknown device: $MODEL setting to beyond2lte"
-    KERNEL_DEFCONFIG=exynos9820-beyond2lte_defconfig
+    KERNEL_DEFCONFIG=exynos9820-d2s_defconfig
     SOC=9820
     BOARD=SRPRI17C014KU
 esac
